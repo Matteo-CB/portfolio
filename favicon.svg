@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    <style>
+        .cadre { fill: #2E5E58; }
+        .lettre { fill: #F6F1E7; }
+        @media (prefers-color-scheme: dark) {
+            .cadre { fill: #F6F1E7; }
+            .lettre { fill: #2E5E58; }
+        }
+    </style>
+    <rect class="cadre" width="64" height="64" rx="12"/>
+    <path class="lettre" d="M12 14 L22 14 L32 38 L42 14 L52 14 L52 50 L44 50 L44 24 L34 46 L30 46 L20 24 L20 50 L12 50 Z"/>
+</svg>

@@ -1,0 +1,28 @@
+{
+  "name": "Mattéo CHANTE BIYIKLI, portfolio BTS SIO option SLAM",
+  "short_name": "M.cb",
+  "description": "Portfolio de Mattéo CHANTE BIYIKLI pour l'épreuve E4 du BTS SIO option SLAM, session 2026. Sept réalisations, parcours, veille technologique.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F6F1E7",
+  "theme_color": "#2E5E58",
+  "categories": ["portfolio", "education", "developer"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/toucheApple.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
