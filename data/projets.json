@@ -188,35 +188,35 @@
     }
   ],
   "veille": {
-    "methode": "Veille hebdomadaire d'une heure environ, centrée sur trois sujets suivis sur l'année. Je collecte les articles dans une liste de lecture, je relis le samedi, et je conserve une courte synthèse écrite quand un sujet mérite d'être retenu.",
+    "methode": "Six sources, chacune avec un rôle clair. Pour me former au développement web, je m'appuie sur les chaînes YouTube de Grafikart et de Dave Gray Teaches Code, ainsi que sur les modules de Dyma. Pour l'actualité et les nouveautés, je regarde Micode sur la cybersécurité et la culture tech, et je consulte mon fil X qui agrège des comptes de développeurs francophones et internationaux. La Micro By Flo apporte un éclairage différent, des conseils concrets sur l'auto entreprise et la vie de freelance, qui touchent directement mon statut actuel.",
     "sources": [
-      { "nom": "MDN Web Docs", "url": "https://developer.mozilla.org", "type": "Documentation" },
-      { "nom": "Developpez.com", "url": "https://www.developpez.com", "type": "Actualités" },
-      { "nom": "ZDNet France", "url": "https://www.zdnet.fr", "type": "Actualités" },
-      { "nom": "Le Monde Informatique", "url": "https://www.lemondeinformatique.fr", "type": "Actualités" },
-      { "nom": "CNIL", "url": "https://www.cnil.fr", "type": "Régulation et données" },
-      { "nom": "ANSSI", "url": "https://www.ssi.gouv.fr", "type": "Cybersécurité" }
+      { "nom": "Grafikart", "url": "https://www.youtube.com/@Grafikart-fr", "type": "Chaîne YouTube, formation, PHP, Symfony, JavaScript, CSS" },
+      { "nom": "Dave Gray Teaches Code", "url": "https://www.youtube.com/@DaveGrayTeachesCode", "type": "Chaîne YouTube, formation web, anglais" },
+      { "nom": "Dyma", "url": "https://dyma.fr", "type": "Plateforme de formation vidéo, développement web" },
+      { "nom": "Micode", "url": "https://www.youtube.com/@Micode", "type": "Chaîne YouTube, cybersécurité et culture tech" },
+      { "nom": "La Micro By Flo", "url": "https://www.youtube.com/@LaMicroByFlo", "type": "Chaîne YouTube, conseils auto entreprise et freelance" },
+      { "nom": "X", "url": "https://x.com", "type": "Fil de comptes développeurs, actualité en temps réel" }
     ],
     "sujets": [
-      "Accessibilité web et conformité RGAA",
-      "Sécurité des applications web",
-      "Outils de déploiement continu pour petits projets"
+      "Évolutions des frameworks JavaScript et de l'écosystème front",
+      "Sécurité des applications web et durcissement des formulaires",
+      "Outils du développeur, terminal, Git et déploiement continu"
     ],
     "billets": [
       {
-        "titre": "Lecture de la mise à jour RGAA 4.1",
-        "date": "2025 11",
-        "resume": "Synthèse des points qui changent pour les composants interactifs courants, avec une checklist personnelle pour les prochains projets."
+        "titre": "Série Grafikart sur le PHP moderne",
+        "date": "2026 04",
+        "resume": "Notes sur les bonnes pratiques actuelles. Séparation stricte des couches, typage des objets métier, tests unitaires de base. À appliquer sur les prochains projets PHP côté formation."
       },
       {
-        "titre": "Retour d'expérience, mise en place d'HTTPS sur un VPS",
-        "date": "2025 09",
-        "resume": "Notes prises pendant l'installation, choix de Certbot, points d'attention pour le renouvellement automatique."
+        "titre": "Vidéo Micode sur une attaque par formulaire",
+        "date": "2026 03",
+        "resume": "Étude de cas claire sur une compromission par formulaire mal protégé. Pour mes projets, validation côté serveur stricte, limites par adresse, journalisation des tentatives d'accès."
       },
       {
-        "titre": "Panorama des hébergeurs pour un projet étudiant",
-        "date": "2025 06",
-        "resume": "Comparaison rapide (prix, performances observées, qualité du support) entre trois hébergeurs testés sur un site éditorial."
+        "titre": "Module Dyma sur les API REST",
+        "date": "2026 02",
+        "resume": "Révision des fondamentaux, pagination, gestion d'erreurs, documentation OpenAPI. Réinvesti directement dans la petite API d'administration de l'outil VPS."
       }
     ]
   }
