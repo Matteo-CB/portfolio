@@ -34,18 +34,18 @@
   "projets": [
     {
       "id": "stockageManager",
-      "titre": "Stockage Manager",
-      "typeProjet": "Application de bureau",
-      "descriptionCourte": "Application C++ pour gérer une arborescence de fichiers, avec recherche et opérations par lot.",
-      "descriptionLongue": "Application de bureau écrite en C++ qui expose une arborescence de fichiers sous forme lisible, avec des opérations courantes (copie, déplacement, suppression, renommage) regroupées en lots. L'interface cible la clarté plutôt que la densité. Le projet a servi à travailler la gestion mémoire, la séparation entre modèle et vue, et la robustesse face à des chemins longs ou des caractères spéciaux.",
-      "periode": "Cours de formation",
-      "contexte": "Projet individuel mené en formation.",
-      "environnement": ["C++", "CMake", "Qt", "Windows"],
+      "titre": "Vaulkeeper",
+      "typeProjet": "Application de bureau Windows",
+      "descriptionCourte": "Gestionnaire de stockage natif pour Windows écrit en C++23 avec Qt 6.",
+      "descriptionLongue": "Application de bureau Windows qui analyse rapidement l'espace occupé par les fichiers et aide à libérer de la place. Lecture directe de la table de fichiers MFT NTFS pour un scan d'environ quinze secondes sur deux téraoctets. Trois vues complémentaires, treemap, sunburst et tableau trié. Détection des doublons exacts par hachage xxHash3. Désinstallation propre des applications avec nettoyage des clés de registre laissées par les uninstallers officiels. Quarantaine de trente jours avant suppression définitive. Lecture de la santé SMART des disques physiques. Moteur de règles YAML pour automatiser le nettoyage selon des conditions (cron, seuil d'espace, insertion de disque). Intégration au menu contextuel de l'Explorateur Windows. Une CLI vk scriptable produit une sortie JSON. L'application est traduite en cinq langues, anglais, français, espagnol, allemand et italien.",
+      "periode": "Projet personnel",
+      "contexte": "Projet personnel mené en autonomie.",
+      "environnement": ["C++23", "Qt 6", "CMake", "vcpkg", "SQLite3", "xxHash", "OpenSSL", "Windows"],
       "competences": ["C4", "C5", "C6"],
       "sousCompetences": [
-        "Analyse du besoin et cahier des charges",
-        "Conception par modules",
-        "Tests manuels et correction d'anomalies"
+        "Conception en plusieurs modules natifs",
+        "Performance et accès bas niveau au système de fichiers",
+        "Internationalisation et empaquetage Windows"
       ],
       "dossierImages": "medias/stockageManager",
       "boutons": {
@@ -56,18 +56,18 @@
     },
     {
       "id": "siteEditorial",
-      "titre": "Site éditorial d'articles",
-      "typeProjet": "Site web",
-      "descriptionCourte": "Site éditorial pour la publication d'articles longs, avec administration légère et pages lisibles.",
-      "descriptionLongue": "Site web destiné à publier des articles de fond. La mise en page privilégie la lecture longue : typographie soignée, rythme éditorial, navigation simple. La partie administration permet de rédiger, prévisualiser, publier et classer les articles. Le travail a porté sur le modèle de données, l'accessibilité, le référencement naturel de base et la mise en production.",
-      "periode": "Cours de formation",
-      "contexte": "Projet individuel mené en formation.",
-      "environnement": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+      "titre": "Metalya",
+      "typeProjet": "Plateforme éditoriale",
+      "descriptionCourte": "Plateforme éditoriale Next.js et MongoDB, avec circuit de publication multirôles, newsletter et messagerie.",
+      "descriptionLongue": "Plateforme éditoriale construite avec Next.js 16, React 19 et MongoDB via Prisma. Circuit de publication complet avec quatre rôles, lecteur, rédacteur, administrateur et super administrateur, et un statut d'article qui passe par brouillon, en attente, publié ou rejeté. Le site couvre quatre catégories, actualités, culture, tech et voyage. Au delà de la rédaction, il intègre une newsletter, une messagerie interne entre utilisateurs, un système de commentaires, un fil RSS et plusieurs plans de site, dont un dédié aux actualités et un dédié aux web stories. Le déclenchement de l'indexation est branché sur les API IndexNow et Google. Les médias sont stockés sur Vercel Blob, l'authentification utilise NextAuth 5 et bcryptjs, et les e mails passent par Resend et React Email.",
+      "periode": "Projet personnel",
+      "contexte": "Projet personnel mené en autonomie.",
+      "environnement": ["Next.js 16", "React 19", "TypeScript", "MongoDB", "Prisma", "NextAuth 5", "Tailwind CSS", "Vercel Blob", "Resend"],
       "competences": ["C3", "C4", "C5", "C6"],
       "sousCompetences": [
-        "Conception de base de données",
-        "Développement front et back",
-        "Mise en ligne et maintenance"
+        "Modélisation de données et workflow éditorial",
+        "Référencement, RSS et plans de site",
+        "Authentification, rôles et permissions"
       ],
       "dossierImages": "medias/siteEditorial",
       "boutons": {
@@ -78,18 +78,18 @@
     },
     {
       "id": "reseauIncubateur",
-      "titre": "Réseau local d'un incubateur",
+      "titre": "Réseau local de Hill Start",
       "typeProjet": "Conception et documentation réseau",
-      "descriptionCourte": "Étude, conception et documentation du réseau local d'un incubateur d'entreprises fictif.",
-      "descriptionLongue": "Mission pédagogique de conception réseau pour un incubateur qui héberge plusieurs jeunes structures. Le dossier comprend le plan d'adressage, le découpage en sous réseaux, le choix des équipements, les règles de pare feu, et la documentation destinée aux futurs exploitants. L'objectif a été de livrer un dossier exploitable par un technicien qui arrive après coup.",
+      "descriptionCourte": "Document d'architecture technique du réseau local de la startup fictive Hill Start.",
+      "descriptionLongue": "Conception et documentation du réseau local d'une startup fictive nommée Hill Start, située 130 rue de Lourmel à Paris. Le livrable est un Document d'Architecture Technique destiné aux équipes en charge du déploiement. Il contient le plan du bâtiment, le schéma physique, le schéma logique du réseau et le plan d'adressage IPv4 avec le découpage en sous réseaux. La maquette a été montée et vérifiée sur Cisco Packet Tracer. L'objectif est de livrer un dossier directement exploitable par un technicien arrivant après coup.",
       "periode": "Cours de formation",
-      "contexte": "Projet de groupe en formation, simulation d'un contexte professionnel.",
-      "environnement": ["Cisco Packet Tracer", "Schémas réseau", "VLAN", "VPN"],
+      "contexte": "Projet pédagogique mené en autonomie, simulation d'un contexte professionnel.",
+      "environnement": ["Cisco Packet Tracer", "IPv4", "Schémas logiques et physiques", "VLAN"],
       "competences": ["C1", "C2", "C4", "C5", "C6"],
       "sousCompetences": [
-        "Plan d'adressage IPv4",
-        "Schémas logiques et physiques",
-        "Documentation d'exploitation"
+        "Plan d'adressage IPv4 et sous réseaux",
+        "Cartographies physique et logique",
+        "Document d'architecture technique"
       ],
       "dossierImages": "medias/reseauIncubateur",
       "boutons": {
@@ -102,16 +102,16 @@
       "id": "serveurGlpi",
       "titre": "Serveur GLPI et démarche ITIL",
       "typeProjet": "Service informatique",
-      "descriptionCourte": "Mise en place d'un serveur GLPI pour la gestion du parc et des tickets, dans une logique ITIL.",
-      "descriptionLongue": "Installation et paramétrage d'un serveur GLPI pour couvrir la gestion du parc informatique, le suivi des incidents et des demandes, et le catalogue de services. La démarche s'inspire du référentiel ITIL, avec un travail sur les catégories, les circuits de validation et les rapports. Les procédures associées ont été rédigées pour que l'outil soit repris et exploité par une équipe.",
+      "descriptionCourte": "Serveur GLPI sous Linux avec MariaDB et agent d'inventaire déployé sur un poste.",
+      "descriptionLongue": "Installation et paramétrage d'un serveur GLPI sous Debian, Apache et MariaDB 10.11, pour gérer un parc informatique et un suivi de tickets dans une démarche inspirée du référentiel ITIL. Un agent GLPI version 1.5 a été déployé sur un poste en réseau pour valider la remontée d'inventaire automatique. Les livrables incluent l'export SQL de la base, la documentation du paramétrage, la configuration de l'agent et le logigramme du processus de traitement des demandes.",
       "periode": "Cours de formation",
-      "contexte": "Projet individuel avec restitution orale en formation.",
-      "environnement": ["GLPI", "Apache", "MariaDB", "Linux", "ITIL"],
+      "contexte": "Projet pédagogique mené en autonomie.",
+      "environnement": ["GLPI", "Apache", "MariaDB 10.11", "Debian", "Agent GLPI", "ITIL"],
       "competences": ["C1", "C2", "C4", "C5", "C6"],
       "sousCompetences": [
-        "Installation et configuration",
-        "Paramétrage fonctionnel",
-        "Rédaction de procédures"
+        "Installation et paramétrage du serveur",
+        "Déploiement d'un agent d'inventaire",
+        "Logigramme du traitement des demandes"
       ],
       "dossierImages": "medias/serveurGlpi",
       "boutons": {
@@ -124,16 +124,16 @@
       "id": "chronometreJava",
       "titre": "Chronomètre Java Swing",
       "typeProjet": "Application de bureau",
-      "descriptionCourte": "Petit chronomètre en Java Swing, avec tours intermédiaires et historique persistant.",
-      "descriptionLongue": "Application de bureau Java Swing pensée comme un exercice de mise au propre : chronomètre précis, tours intermédiaires, historique persistant entre deux lancements. Le code a été organisé selon le schéma modèle, vue, contrôleur, pour servir d'exemple lisible et réutilisable. L'exécution a été validée sur Windows et Linux.",
+      "descriptionCourte": "Chronomètre Java Swing avec cinq boutons et affichage au centième de seconde.",
+      "descriptionLongue": "Application de bureau Java Swing avec cinq boutons, démarrer, tour, stop, reprendre et réinitialiser. L'affichage est au format heure minute seconde centième, et trois tours intermédiaires sont conservés à l'écran. Le code est organisé en deux classes claires, Main qui sert uniquement à instancier la fenêtre, et Chrono qui étend JFrame et contient toute la logique. Un SwingWorker fait tourner le chronomètre en arrière plan pour ne pas bloquer la fenêtre.",
       "periode": "Cours de formation",
-      "contexte": "Projet individuel mené en formation.",
-      "environnement": ["Java", "Swing", "Maven"],
+      "contexte": "Projet pédagogique mené en autonomie.",
+      "environnement": ["Java 17", "Swing", "AWT", "SwingWorker"],
       "competences": ["C4", "C5", "C6"],
       "sousCompetences": [
-        "Conception orientée objet",
+        "Conception en classes lisibles",
         "Interface graphique Swing",
-        "Persistance locale"
+        "Traitement en arrière plan avec SwingWorker"
       ],
       "dossierImages": "medias/chronometreJava",
       "boutons": {
@@ -144,18 +144,18 @@
     },
     {
       "id": "outilVps",
-      "titre": "Outil d'administration de VPS",
-      "typeProjet": "Application web interne",
-      "descriptionCourte": "Interface web d'administration pour un serveur privé virtuel, avec journalisation des actions.",
-      "descriptionLongue": "Outil web interne commandé par un client auto entrepreneur pour administrer un serveur privé virtuel sans passer systématiquement par la ligne de commande. Les actions exposées sont limitées, tracées et confirmées. Le projet a couvert la collecte du besoin, la conception, la mise en production, la rédaction d'une procédure d'exploitation, et un transfert de compétences au client.",
-      "periode": "Milieu professionnel",
-      "contexte": "Mission auto entrepreneur pour un client privé.",
-      "environnement": ["Node.js", "Express", "Linux", "SSH", "Bash"],
+      "titre": "VPSmanager",
+      "typeProjet": "Application web d'administration",
+      "descriptionCourte": "Panneau d'administration web Next.js qui pilote mon serveur virtuel privé hébergeant plusieurs projets.",
+      "descriptionLongue": "Panneau d'administration web qui centralise la gestion d'un serveur virtuel privé sur lequel j'héberge plusieurs projets web personnels. L'interface remplace les connexions SSH manuelles répétées pour la mise en ligne, le renouvellement de certificats, la modification DNS, la consultation des journaux ou le redémarrage de services. L'authentification combine mot de passe haché avec argon2 et second facteur TOTP présenté en QR code, codes de récupération et verrouillage temporaire après échecs répétés. Les modules couvrent le déploiement de sites depuis GitHub, la gestion des domaines et des certificats TLS, les zones DNS, les variables d'environnement, les bases de données hébergées, le pare feu, les sauvegardes, les incidents et un terminal SSH directement intégré dans le navigateur via xterm.js, node pty et WebSocket. Le schéma de données contient une trentaine de modèles. Une démonstration est accessible avec un compte d'essai sur console.hiddenlab.fr.",
+      "periode": "Projet personnel",
+      "contexte": "Projet personnel pour piloter mon propre VPS qui héberge plusieurs sites.",
+      "environnement": ["Next.js 15", "TypeScript", "React 19", "Prisma", "PostgreSQL", "Redis", "NextAuth 5", "argon2", "TOTP", "xterm.js", "ssh2", "WebSocket"],
       "competences": ["C1", "C2", "C4", "C5", "C6"],
       "sousCompetences": [
-        "Analyse du besoin client",
-        "Sécurisation des accès",
-        "Mise en production et suivi"
+        "Authentification renforcée et contrôle d'accès",
+        "Intégration de services système et SSH dans une interface web",
+        "Schéma de données et flux temps réel"
       ],
       "dossierImages": "medias/outilVps",
       "boutons": {
@@ -166,18 +166,18 @@
     },
     {
       "id": "siteTouristique",
-      "titre": "Site d'information et de réservation touristique",
-      "typeProjet": "Site web public",
-      "descriptionCourte": "Site public d'information touristique, avec module de réservation et espace d'administration.",
-      "descriptionLongue": "Site web public pour un acteur touristique local. Il présente les offres, permet la réservation en ligne et donne au client un espace pour mettre à jour les contenus. Le travail a porté sur la structure des pages, l'accessibilité, la performance d'affichage, l'intégration d'un moyen de paiement, et la formation du client à l'espace d'administration.",
+      "titre": "ZE en Provence",
+      "typeProjet": "Site vitrine et redirection de réservation",
+      "descriptionCourte": "Site vitrine Next.js pour deux villas de location saisonnière en Provence, avec redirection vers Airbnb.",
+      "descriptionLongue": "Site vitrine et de redirection de réservation pour ZE en Provence, structure de location saisonnière située à Noves dans les Bouches du Rhône. La cliente, Sandie Vicente, gérante de la SCI de la Font du Loup, louait jusque là uniquement via Airbnb. L'objectif a été de créer un site officiel pour présenter ses deux villas, Rougadou et Picasso, avec ses propres visuels, raconter son histoire et capter les voyageurs qui cherchent la destination en moteurs de recherche, tout en gardant Airbnb comme canal final de réservation. Le site est développé en Next.js, TypeScript et Tailwind CSS. Les contenus de chaque villa sont décrits dans un fichier de configuration TypeScript typé. Les médias sont stockés sur Vercel Blob, le formulaire de contact passe par EmailJS et l'audience est suivie avec Google Analytics. Le référencement a été soigné avec balises titre et description par page, données structurées LodgingBusiness, plan de site XML et robots.txt.",
       "periode": "Milieu professionnel",
-      "contexte": "Mission auto entrepreneur pour un professionnel du tourisme.",
-      "environnement": ["PHP", "MySQL", "JavaScript", "Stripe", "HTML", "CSS"],
+      "contexte": "Mission auto entrepreneur pour Sandie Vicente, SCI de la Font du Loup.",
+      "environnement": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel Blob", "EmailJS", "Vercel"],
       "competences": ["C3", "C4", "C5", "C6"],
       "sousCompetences": [
-        "Intégration de maquettes",
-        "Module de réservation",
-        "Espace d'administration"
+        "Conception responsive pensée pour le mobile",
+        "Référencement et données structurées LodgingBusiness",
+        "Configuration des contenus en TypeScript et déploiement continu"
       ],
       "dossierImages": "medias/siteTouristique",
       "boutons": {
