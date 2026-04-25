@@ -10,7 +10,6 @@
         modeleProjet: document.getElementById("modelePro"),
         veilleMethode: document.getElementById("veilleMethode"),
         veilleSources: document.getElementById("veilleSources"),
-        veilleSujets: document.getElementById("veilleSujets"),
         veilleBillets: document.getElementById("veilleBillets"),
         contactEmail: document.getElementById("contactEmail"),
         contactEmailValeur: document.getElementById("contactEmailValeur"),
@@ -231,14 +230,6 @@
             elements.veilleSources.appendChild(li);
         });
 
-        elements.veilleSujets.innerHTML = "";
-        (veille.sujets || []).forEach(function (sujet) {
-            const li = document.createElement("li");
-            li.className = "veilleSujet";
-            li.textContent = sujet;
-            elements.veilleSujets.appendChild(li);
-        });
-
         elements.veilleBillets.innerHTML = "";
         (veille.billets || []).forEach(function (billet) {
             const li = document.createElement("li");
@@ -253,7 +244,17 @@
 
             const titre = document.createElement("p");
             titre.className = "veilleBilletTitre";
-            titre.textContent = billet.titre || "";
+            if (billet.url) {
+                const lien = document.createElement("a");
+                lien.className = "veilleBilletLien";
+                lien.href = billet.url;
+                lien.target = "_blank";
+                lien.rel = "noopener";
+                lien.textContent = billet.titre || "";
+                titre.appendChild(lien);
+            } else {
+                titre.textContent = billet.titre || "";
+            }
             li.appendChild(titre);
 
             if (billet.resume) {

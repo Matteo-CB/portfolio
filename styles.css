@@ -728,8 +728,8 @@ ul, ol {
 
 .veilleColonnes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 64px;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 80px;
 }
 
 .veilleColonne {
@@ -747,9 +747,9 @@ ul, ol {
     margin-bottom: 24px;
 }
 
-.veilleSources, .veilleSujets, .veilleBillets {
+.veilleSources, .veilleBillets {
     display: grid;
-    gap: 20px;
+    gap: 24px;
 }
 
 .veilleSource {
@@ -774,15 +774,6 @@ ul, ol {
     color: var(--couleurTexteDiscret);
 }
 
-.veilleSujet {
-    font-family: var(--policeSerif);
-    font-style: italic;
-    font-size: 20px;
-    color: var(--couleurTexte);
-    padding-left: 18px;
-    border-left: 2px solid var(--couleurAccent);
-}
-
 .veilleBillet {
     display: grid;
     gap: 6px;
@@ -797,9 +788,25 @@ ul, ol {
 
 .veilleBilletTitre {
     font-family: var(--policeSerif);
-    font-size: 18px;
+    font-size: 19px;
     font-variation-settings: "opsz" 48, "wght" 420;
     line-height: 1.3;
+}
+
+.veilleBilletLien {
+    color: inherit;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    padding-bottom: 2px;
+    transition: background-size var(--transition), color var(--transition);
+}
+
+.veilleBilletLien:hover {
+    color: var(--couleurAccent);
+    background-size: 100% 1px;
 }
 
 .veilleBilletResume {

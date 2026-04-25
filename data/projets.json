@@ -197,26 +197,24 @@
       { "nom": "La Micro By Flo", "url": "https://www.youtube.com/@LaMicroByFlo", "type": "Chaîne YouTube, conseils auto entreprise et freelance" },
       { "nom": "X", "url": "https://x.com", "type": "Fil de comptes développeurs, actualité en temps réel" }
     ],
-    "sujets": [
-      "Évolutions des frameworks JavaScript et de l'écosystème front",
-      "Sécurité des applications web et durcissement des formulaires",
-      "Outils du développeur, terminal, Git et déploiement continu"
-    ],
     "billets": [
       {
-        "titre": "Série Grafikart sur le PHP moderne",
+        "titre": "Vidéo Grafikart sur Hyprland",
         "date": "2026 04",
-        "resume": "Notes sur les bonnes pratiques actuelles. Séparation stricte des couches, typage des objets métier, tests unitaires de base. À appliquer sur les prochains projets PHP côté formation."
+        "resume": "Découverte du compositeur Wayland Hyprland sur Linux. Notes sur l'installation, la configuration en fichier texte et l'intérêt d'un environnement épuré pour le développement.",
+        "url": "https://www.youtube.com/watch?v=C5BSFB4_il4"
       },
       {
-        "titre": "Vidéo Micode sur une attaque par formulaire",
-        "date": "2026 03",
-        "resume": "Étude de cas claire sur une compromission par formulaire mal protégé. Pour mes projets, validation côté serveur stricte, limites par adresse, journalisation des tentatives d'accès."
+        "titre": "Vidéo Micode sur l'attaque informatique la plus sophistiquée de l'histoire",
+        "date": "2025",
+        "resume": "Récit d'une opération qui a marqué l'histoire de la cybersécurité. Lecture utile pour garder en tête la rigueur attendue, même sur des projets web modestes.",
+        "url": "https://youtu.be/WQBLPYToLME"
       },
       {
-        "titre": "Module Dyma sur les API REST",
+        "titre": "Module Dyma sur Unity",
         "date": "2026 02",
-        "resume": "Révision des fondamentaux, pagination, gestion d'erreurs, documentation OpenAPI. Réinvesti directement dans la petite API d'administration de l'outil VPS."
+        "resume": "Découverte du moteur Unity à travers un module Dyma. Premiers pas sur l'éditeur, l'organisation des scènes et le scripting.",
+        "url": "https://dyma.fr/formations/unity"
       }
     ]
   }
