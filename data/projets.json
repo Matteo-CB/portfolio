@@ -190,7 +190,7 @@
   "veille": {
     "methode": "Six sources, chacune avec un rôle clair. Pour me former au développement web, je m'appuie sur les chaînes YouTube de Grafikart et de Dave Gray Teaches Code, ainsi que sur les modules de Dyma. Pour l'actualité et les nouveautés, je regarde Micode sur la cybersécurité et la culture tech, et je consulte mon fil X qui agrège des comptes de développeurs francophones et internationaux. La Micro By Flo apporte un éclairage différent, des conseils concrets sur l'auto entreprise et la vie de freelance, qui touchent directement mon statut actuel.",
     "sources": [
-      { "nom": "Grafikart", "url": "https://www.youtube.com/@Grafikart-fr", "type": "Chaîne YouTube, formation, PHP, Symfony, JavaScript, CSS" },
+      { "nom": "Grafikart", "url": "https://www.youtube.com/@grafikart", "type": "Chaîne YouTube, formation, PHP, Symfony, JavaScript, CSS" },
       { "nom": "Dave Gray Teaches Code", "url": "https://www.youtube.com/@DaveGrayTeachesCode", "type": "Chaîne YouTube, formation web, anglais" },
       { "nom": "Dyma", "url": "https://dyma.fr", "type": "Plateforme de formation vidéo, développement web" },
       { "nom": "Micode", "url": "https://www.youtube.com/@Micode", "type": "Chaîne YouTube, cybersécurité et culture tech" },
