@@ -123,6 +123,7 @@
                 <ul class="navListe" id="navListe">
                     <li><a class="navLien" href="#accueil" data-ancre="accueil">Accueil</a></li>
                     <li><a class="navLien" href="#parcours" data-ancre="parcours">Parcours</a></li>
+                    <li><a class="navLien" href="#activite" data-ancre="activite">Activité</a></li>
                     <li><a class="navLien" href="#realisations" data-ancre="realisations">Réalisations</a></li>
                     <li><a class="navLien" href="#veille" data-ancre="veille">Veille</a></li>
                     <li><a class="navLien" href="#contact" data-ancre="contact">Contact</a></li>
@@ -159,10 +160,82 @@
             </div>
         </section>
 
-        <section class="section sectionProjets" id="realisations">
+        <section class="section sectionActivite" id="activite">
             <div class="conteneur">
                 <header class="sectionEnTete">
                     <p class="sectionNumero">02</p>
+                    <h2 class="sectionTitre">Activité professionnelle</h2>
+                    <p class="sectionIntro">Mission auto entrepreneur en cours. Conception et développement du site web d'un loueur saisonnier en Provence, de la première maquette à la mise en ligne.</p>
+                </header>
+
+                <article class="activiteBloc">
+                    <div class="activiteVisuels">
+                        <figure class="activiteImageA">
+                            <img src="medias/activiteZe/ambiance1.webp" alt="Ambiance d'un logement ZE en Provence" loading="lazy">
+                        </figure>
+                        <figure class="activiteImageB">
+                            <img src="medias/activiteZe/ambiance2.webp" alt="Intérieur d'un logement ZE en Provence" loading="lazy">
+                        </figure>
+                        <figure class="activiteImageC">
+                            <img src="medias/activiteZe/ambiance3.webp" alt="Vue extérieure d'un logement ZE en Provence" loading="lazy">
+                        </figure>
+                    </div>
+
+                    <div class="activiteTexte">
+                        <p class="activiteSurtitre">Client, SCI de la Font du Loup</p>
+                        <h3 class="activiteTitre">ZE en Provence</h3>
+                        <p class="activiteSite">zeenprovence.fr</p>
+
+                        <div class="activiteCorps">
+                            <p>
+                                Site web pour Sandie Vicente, ancienne aide soignante puis assistante sociale en protection de l'enfance, aujourd'hui en reconversion dans l'accueil touristique avec son conjoint Benoit. Le site présente trois logements de caractère situés à Noves, au carrefour des Alpilles, du Luberon et du Mont Ventoux, à proximité d'Avignon et de Saint Rémy de Provence.
+                            </p>
+                            <p>
+                                Deux villas mises en avant, la Villa du Rougadou (230 m², huit personnes, vue sur les Alpilles) et la Villa Picasso (105 m², six personnes, jacuzzi). Deux formats de séjours thématiques, un week end créatif (poterie, yoga, fleurs séchées) et une retraite cocooning (yoga, couture, nature, esprit de Noël). Réservation possible par formulaire, par téléphone, par e mail ou via Instagram.
+                            </p>
+                            <p>
+                                Ma mission, de la conception à la mise en ligne. Architecture Next.js avec App Router, pages de logement générées dynamiquement, carrousels d'images, formulaires de contact et de demande de séjour, stockage des photos et des livrets d'accueil sur Vercel Blob, envoi des messages par EmailJS, suivi d'audience via Google Analytics, déploiement continu sur Vercel.
+                            </p>
+                        </div>
+
+                        <dl class="activiteDonnees">
+                            <div class="activiteDonnee">
+                                <dt>Stack</dt>
+                                <dd>Next.js 14, TypeScript, Tailwind CSS, MongoDB, Mongoose</dd>
+                            </div>
+                            <div class="activiteDonnee">
+                                <dt>Services</dt>
+                                <dd>Vercel, Vercel Blob, EmailJS, Google Analytics</dd>
+                            </div>
+                            <div class="activiteDonnee">
+                                <dt>Pages livrées</dt>
+                                <dd>Accueil, logements dynamiques, séjours, réservation, à propos, mentions légales</dd>
+                            </div>
+                            <div class="activiteDonnee">
+                                <dt>Rôle</dt>
+                                <dd>Conception, développement, mise en production, transfert de compétences</dd>
+                            </div>
+                        </dl>
+
+                        <div class="activiteActions">
+                            <a class="bouton boutonPrincipal" href="https://zeenprovence.fr" target="_blank" rel="noopener">
+                                <span>Visiter le site</span>
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 18 L18 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M9 6 L18 6 L18 15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </a>
+                            <a class="bouton boutonSecondaire" href="https://github.com/Matteo-CB/ze-en-provences" target="_blank" rel="noopener">
+                                <span>Voir le code</span>
+                                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12 L19 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M13 6 L19 12 L13 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section sectionProjets" id="realisations">
+            <div class="conteneur">
+                <header class="sectionEnTete">
+                    <p class="sectionNumero">03</p>
                     <h2 class="sectionTitre">Réalisations</h2>
                     <p class="sectionIntro">Sept projets livrés en formation et en mission, avec leurs documents et le code quand il est disponible.</p>
                 </header>
@@ -173,7 +246,7 @@
         <section class="section sectionVeille" id="veille">
             <div class="conteneur">
                 <header class="sectionEnTete">
-                    <p class="sectionNumero">03</p>
+                    <p class="sectionNumero">04</p>
                     <h2 class="sectionTitre">Veille technologique</h2>
                     <p class="sectionIntro" id="veilleMethode"></p>
                 </header>
@@ -197,7 +270,7 @@
         <section class="section sectionContact" id="contact">
             <div class="conteneur contactConteneur">
                 <header class="sectionEnTete">
-                    <p class="sectionNumero">04</p>
+                    <p class="sectionNumero">05</p>
                     <h2 class="sectionTitre">Contact</h2>
                     <p class="sectionIntro">Disponible pour un échange avant ou après la soutenance.</p>
                 </header>
@@ -247,7 +320,7 @@
     <footer class="siteFooter">
         <div class="conteneur siteFooterInner">
             <p class="siteFooterMention">Mattéo CHANTE BIYIKLI, portfolio BTS SIO option SLAM, session 2026.</p>
-            <p class="siteFooterSecondaire">Site personnel statique, HTML, CSS, JavaScript.</p>
+            <p class="siteFooterSecondaire">Site personnel statique, HTML, CSS, JavaScript. <a class="siteFooterLien" href="https://github.com/Matteo-CB/portfolio" target="_blank" rel="noopener">Code source</a>.</p>
         </div>
     </footer>
 

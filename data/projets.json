@@ -49,13 +49,10 @@
       ],
       "dossierImages": "medias/stockageManager",
       "boutons": {
-        "github": "",
+        "github": "https://github.com/Matteo-CB/vaulkeeper",
         "telechargement": ""
       },
-      "documents": [
-        { "nom": "Cahier des charges", "url": "" },
-        { "nom": "Documentation technique", "url": "" }
-      ]
+      "documents": []
     },
     {
       "id": "siteEditorial",
@@ -77,10 +74,7 @@
         "github": "https://github.com/Matteo-CB/metalya",
         "telechargement": ""
       },
-      "documents": [
-        { "nom": "Modèle conceptuel de données", "url": "" },
-        { "nom": "Documentation utilisateur", "url": "" }
-      ]
+      "documents": []
     },
     {
       "id": "reseauIncubateur",
@@ -100,13 +94,9 @@
       "dossierImages": "medias/reseauIncubateur",
       "boutons": {
         "github": "",
-        "telechargement": ""
+        "telechargement": "medias/reseauIncubateur/livrableReseauIncubateur.zip"
       },
-      "documents": [
-        { "nom": "Dossier de conception", "url": "" },
-        { "nom": "Schémas logiques", "url": "" },
-        { "nom": "Plan d'adressage", "url": "" }
-      ]
+      "documents": []
     },
     {
       "id": "serveurGlpi",
@@ -126,12 +116,9 @@
       "dossierImages": "medias/serveurGlpi",
       "boutons": {
         "github": "",
-        "telechargement": ""
+        "telechargement": "medias/serveurGlpi/livrableServeurGlpi.zip"
       },
-      "documents": [
-        { "nom": "Procédure d'installation", "url": "" },
-        { "nom": "Guide utilisateur", "url": "" }
-      ]
+      "documents": []
     },
     {
       "id": "chronometreJava",
@@ -153,10 +140,7 @@
         "github": "https://github.com/Matteo-CB/chronometre",
         "telechargement": ""
       },
-      "documents": [
-        { "nom": "Cahier des charges", "url": "" },
-        { "nom": "Documentation technique", "url": "" }
-      ]
+      "documents": []
     },
     {
       "id": "outilVps",
@@ -178,10 +162,7 @@
         "github": "https://github.com/Matteo-CB/VPSmanager",
         "telechargement": ""
       },
-      "documents": [
-        { "nom": "Note de cadrage", "url": "" },
-        { "nom": "Procédure d'exploitation", "url": "" }
-      ]
+      "documents": []
     },
     {
       "id": "siteTouristique",
@@ -203,10 +184,7 @@
         "github": "https://github.com/Matteo-CB/ze-en-provences",
         "telechargement": ""
       },
-      "documents": [
-        { "nom": "Note de cadrage", "url": "" },
-        { "nom": "Guide client", "url": "" }
-      ]
+      "documents": []
     }
   ],
   "veille": {

@@ -485,7 +485,7 @@
             });
         }, { rootMargin: "40% 0px 45% 0px", threshold: 0 });
 
-        ["accueil", "parcours", "realisations", "veille", "contact"].forEach(function (id) {
+        ["accueil", "parcours", "activite", "realisations", "veille", "contact"].forEach(function (id) {
             const section = document.getElementById(id);
             if (section) observateur.observe(section);
         });
