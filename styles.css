@@ -355,8 +355,8 @@ ul, ol {
 
 .activiteVisuels {
     position: relative;
-    min-height: 640px;
-    padding: 32px 0;
+    min-height: 580px;
+    padding: 24px 0;
 }
 
 .activiteVisuels figure {
@@ -382,25 +382,17 @@ ul, ol {
 .activiteImageA {
     top: 0;
     left: 0;
-    width: 62%;
-    aspect-ratio: 4 / 5;
+    width: 72%;
+    aspect-ratio: 16 / 10;
     z-index: 2;
 }
 
 .activiteImageB {
-    top: 18%;
-    right: 0;
-    width: 48%;
-    aspect-ratio: 3 / 4;
-    z-index: 3;
-}
-
-.activiteImageC {
     bottom: 0;
-    left: 22%;
-    width: 50%;
-    aspect-ratio: 5 / 4;
-    z-index: 1;
+    right: 0;
+    width: 58%;
+    aspect-ratio: 4 / 3;
+    z-index: 3;
 }
 
 .activiteTexte {
@@ -1276,31 +1268,20 @@ ul, ol {
     .activiteVisuels {
         min-height: unset;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 16px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
         padding: 0;
     }
     .activiteVisuels figure {
         position: static;
         width: 100%;
-        aspect-ratio: 4 / 3;
     }
     .activiteImageA {
-        grid-column: span 4;
-        grid-row: 1;
-        aspect-ratio: 4 / 5;
+        aspect-ratio: 16 / 10;
     }
     .activiteImageB {
-        grid-column: span 2;
-        grid-row: 1;
-        aspect-ratio: 2 / 3;
-        align-self: center;
-    }
-    .activiteImageC {
-        grid-column: span 6;
-        grid-row: 2;
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 4 / 3;
     }
     .activiteTexte {
         padding-top: 0;
@@ -1454,22 +1435,13 @@ ul, ol {
         padding-left: 0;
     }
     .activiteVisuels {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
+        grid-template-columns: 1fr;
     }
     .activiteImageA {
-        grid-column: span 2;
         aspect-ratio: 16 / 10;
     }
     .activiteImageB {
-        grid-column: span 1;
-        grid-row: auto;
-        aspect-ratio: 3 / 4;
-    }
-    .activiteImageC {
-        grid-column: span 1;
-        grid-row: auto;
-        aspect-ratio: 3 / 4;
+        aspect-ratio: 4 / 3;
     }
 }
 
