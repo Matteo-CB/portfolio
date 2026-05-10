@@ -7,5 +7,7 @@ desktop.ini
 node_modules/
 *.tmp
 *.docx
+/*.pdf
 oralE4.md
+competencesProjets.md
 aTerminer.txt
